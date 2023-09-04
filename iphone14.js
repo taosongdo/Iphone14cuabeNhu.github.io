@@ -17,7 +17,7 @@ function set2(z){
 window.onload = function(){
     let a = document.querySelector("div.cum");
     a.addEventListener("click", function(){
-        if(Math.round(parseFloat($(a).children(".dynamic").children("div").css("height"))) != 358)
+        if(Math.round(parseFloat($(a).children(".dynamic").children("div").css("height"))) != 357)
         {
             $(a).children(".dynamic").children("div").html(
             `
@@ -27,7 +27,7 @@ window.onload = function(){
             $(a).children(".dynamic").children("div").css({
                 "width":"213.8px",
                 "border-radius":"25px",
-                "height":"358px"
+                "height":"357px"
             });
             setTimeout(set1,500,$(a).children(".dynamic").children("div").children("div.info"))
         }
