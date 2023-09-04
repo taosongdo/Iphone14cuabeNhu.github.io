@@ -1,0 +1,171 @@
+body{
+    background-color: black;
+    font-family: arial;
+    font-size:13px;
+}
+div.khungsat{
+    width:232.8px;
+    height:482.1px;
+    box-shadow: 0 0 2px 1px rgb(190, 82, 190), 0 0 0 3px silver;
+    border-radius: 35px;
+    box-sizing: border-box;
+    position:relative;
+    background-color: black;
+}
+body>div>div{
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+}
+div.manhinh{
+    left:5px;
+    top:5px;
+    position:absolute;
+    background-color: black;
+    width:222.8px;
+    height:472.1px;
+    border-radius: 30px;
+}
+div.manhinhtren{
+    position:relative;
+    box-sizing: border-box;
+    background-color: red;
+    border:2px solid #ffbcf6;
+    height:236.05px;
+    border-radius: 30px 30px 110px 110px; 
+    overflow:hidden;
+}
+div.manhinhtren>div.phankhac{
+    top:-9px;
+    left:-9px;
+    position:absolute;
+    height:488.1px;
+    width:238.8px;
+    background-image: radial-gradient(circle,black,black, black,black,black,#570a91,#ba2dcf,#ffbcf6,#ffbcf6,#ffbcf6,#ffbcf6)
+}
+div.dynamic{
+    top:5px;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    z-index:99;
+    width:100%;
+    height:20px;
+    border-radius: 30px;
+}
+div.dynamic>div{
+    background-color:black;
+    height:20px;
+    width:30%;
+    border-radius: 30px;   
+    position:absolute;  
+    transition: 0.5s;  
+    overflow:hidden;
+}
+div.hinh{
+    opacity:0;
+    margin:20px auto;
+    width:90%;
+    transition:0.5s;
+    border-radius: 15px;
+    overflow:hidden;
+    height:279px;
+    border:3px solid pink;
+}
+div.hinh>img{
+    width:100%;
+}
+div.info{
+    opacity:0;
+    transition:0.5s;
+    margin-top:30px;
+}
+div.info>p{
+    text-align: center;
+    color:pink;
+}
+div.cam{
+    position:absolute;
+    top:8px;
+    left:127px;
+    height:14px;
+    width:14px;
+    z-index:100;
+    background-color:rgb(9, 3, 43);
+    /*rgb(9, 3, 43)*/
+    border-radius: 100%;
+}
+div.cam>div{
+    position:absolute;
+    background-color: rgb(12, 2, 105);
+    height:6px;
+    width:6px;
+    top:4px;
+    left:4px;
+    border-radius: 100%;
+}
+div.faceID{
+    position:absolute;
+    top:8px;
+    left:80.5px;
+    height:14px;
+    width:40px;
+    z-index:100;
+    background-color:rgb(9, 3, 43);
+    /*rgb(9, 3, 43)*/
+    border-radius: 30px;
+}
+div.manhinhduoi{
+    position:relative;
+    background-color: red;
+    border:2px solid #dde4ea;
+    height:236.05px;
+    border-radius:  110px 110px 30px 30px; 
+    box-sizing: border-box;
+    overflow:hidden;
+}
+div.manhinhduoi>div{
+    top:-245px;
+    left:-9px;
+    position:absolute;
+    box-sizing: border-box;
+    height:488.1px;
+    width:238.8px;
+    background-image: radial-gradient(circle,black,black, black,black,black,#99aebe,#90a5b6,#dde4ea,#dde4ea,#dde4ea,#dde4ea)
+}
+div.thongbao{
+    width:4px;
+    background-color: silver;
+    height:20px;
+    margin-top:80px;
+    margin-left:auto;
+}
+div.tangamluong{
+    width:4px;
+    background-color: silver;
+    height:35px;
+    margin-left:auto;
+    margin-top:20px;
+}
+div.giamamluong{
+    width:4px;
+    background-color: silver;
+    height:35px;
+    margin-left:auto;
+    margin-top:10px;
+}
+div.nuttrai{
+    margin-right:0.5px;  
+    text-align: right;
+}
+div.nutphai{
+    margin-left:0.5px;  
+    text-align: left;
+}
+div.nguon{
+    width:4px;
+    background-color: silver;
+    height:60px;
+    margin-left:auto;
+    margin-top:130px;
+}
