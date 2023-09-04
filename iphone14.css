@@ -84,29 +84,6 @@ div.info>p{
     text-align: center;
     color:pink;
 }
-div.amluong{
-    opacity:0;
-    transition:0.5s;
-}
-div.thanh{
-    top:45px;
-    left:40px;
-    right:20px;
-    position:absolute;
-    height:3px;
-    background-color:white;
-    transition:0.5s;
-}
-div.tron{
-    left:39px;
-    top:39px;
-    position:absolute;
-    height:15px;
-    width:15px;
-    border-radius: 100%;
-    background-color:white;
-    transition:0.5s;
-}
 div.cam{
     position:absolute;
     top:8px;
