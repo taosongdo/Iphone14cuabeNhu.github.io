@@ -59,14 +59,14 @@ div.dynamic>div{
     width:30%;
     border-radius: 30px;   
     position:absolute;  
-    transition: 0.5s;  
+    transition: 0.2s;  
     overflow:hidden;
 }
 div.hinh{
     opacity:0;
     margin:20px auto;
     width:90%;
-    transition:0.5s;
+    transition:0.2s;
     border-radius: 15px;
     overflow:hidden;
     height:279px;
