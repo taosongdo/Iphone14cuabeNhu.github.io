@@ -34,7 +34,7 @@ window.onload = function(){
                     "width":"213.8px",
                     "border-radius":"25px",  
                     "height":"357px",
-                    "right":"4.5px"
+                    "right":"4.5px",
                 });
                 setTimeout(set1,500,$(a).children(".dynamic").children("div.dynamicthem").children("div.info"))
             }

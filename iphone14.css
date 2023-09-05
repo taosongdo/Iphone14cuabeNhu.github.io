@@ -29,7 +29,6 @@ div.manhinh{
 div.manhinhtren{
     position:relative;
     box-sizing: border-box;
-    background-color: red;
     border:2px solid #ffbcf6;
     height:236.05px;
     border-radius: 30px 30px 110px 110px; 
@@ -63,7 +62,11 @@ div.hinh{
     border-radius: 20px;
     overflow:hidden;
     height:279px;
-    border:3px solid pink;
+    border:2px solid pink;
+}
+div.manhinhchung{
+    background-color: black;
+    border-radius: 30px;
 }
 div.hinh>img{
     width:100%;
@@ -110,7 +113,6 @@ div.faceID{
 }
 div.manhinhduoi{
     position:relative;
-    background-color: red;
     border:2px solid #dde4ea;
     height:236.05px;
     border-radius:  110px 110px 30px 30px; 
