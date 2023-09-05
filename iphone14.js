@@ -16,7 +16,7 @@ function set2(z){
 }
 window.onload = function(){
     let a = document.querySelector("div.cum");
-    a.addEventListener("click", function(){
+    $(a).children("div.dynamic").addEventListener("click", function(){
         if(Math.round(parseFloat($(a).children(".dynamic").children("div").css("height"))) !== 357)
         {
             $(a).children(".dynamic").children("div").html(
