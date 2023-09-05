@@ -11,7 +11,7 @@ function set2(z){
         "width":"30%",
         "border-radius":"30px",
         "height":"20px",
-        "right":"78.5px"
+        "right":"78px"
     }) 
     z.html(``);
 }
