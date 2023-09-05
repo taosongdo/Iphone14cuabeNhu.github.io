@@ -4,8 +4,8 @@ body{
     font-size:13px;
 }
 div.khungsat{
-    width:232.8px;
-    height:482.1px;
+    width:233px;
+    height:482px;
     box-shadow: 0 0 2px 1px rgb(190, 82, 190), 0 0 0 3px silver;
     border-radius: 35px;
     box-sizing: border-box;
@@ -22,15 +22,16 @@ div.manhinh{
     top:5px;
     position:absolute;
     background-color: black;
-    width:222.8px;
-    height:472.1px;
+    width:223px;
+    height:472px;
     border-radius: 30px;
 }
 div.manhinhtren{
     position:relative;
     box-sizing: border-box;
     border:2px solid #ffbcf6;
-    height:236.05px;
+    height:236px;
+    width:100%;
     border-radius: 30px 30px 110px 110px; 
     overflow:hidden;
 }
@@ -38,16 +39,16 @@ div.manhinhtren>div{
     top:-9px;
     left:-9px;
     position:absolute;
-    height:488.1px;
-    width:238.8px;
+    height:488px;
+    width:239px;
     background-image: radial-gradient(circle,black,black, black,black,black,#570a91,#ba2dcf,#ffbcf6,#ffbcf6,#ffbcf6,#ffbcf6)
 }
 div.dynamic{
-    top:3.5px;
-    right:77.98px;
+    top:5px;
+    right:78px;
     position:absolute;
     z-index:99;
-    width:30%;
+    width:67px;
     height:20px;
     background-color:black;
     border-radius: 30px;   
@@ -57,16 +58,18 @@ div.dynamic{
 div.hinh{
     opacity:0;
     margin:20px auto;
-    width:90%;
+    width:203px;
     transition:0.5s;
     border-radius: 20px;
     overflow:hidden;
     height:279px;
     border:2px solid pink;
+    box-sizing: border-box;
 }
 div.manhinhchung{
     background-color: black;
     border-radius: 30px;
+    height:472px;
 }
 div.hinh>img{
     width:100%;
@@ -82,8 +85,8 @@ div.info>p{
 }
 div.cam{
     position:absolute;
-    top:6.5px;
-    left:127px;
+    top:8px;
+    left:128px;
     height:14px;
     width:14px;
     z-index:100;
@@ -102,7 +105,7 @@ div.cam>div{
 }
 div.faceID{
     position:absolute;
-    top:6.5px;
+    top:8px;
     left:81px;
     height:14px;
     width:40px;
@@ -114,7 +117,7 @@ div.faceID{
 div.manhinhduoi{
     position:relative;
     border:2px solid #dde4ea;
-    height:236.05px;
+    height:236px;
     border-radius:  110px 110px 30px 30px; 
     box-sizing: border-box;
     overflow:hidden;
@@ -124,8 +127,8 @@ div.manhinhduoi>div{
     left:-9px;
     position:absolute;
     box-sizing: border-box;
-    height:488.1px;
-    width:238.8px;
+    height:488px;
+    width:239px;
     background-image: radial-gradient(circle,black,black, black,black,black,#99aebe,#90a5b6,#dde4ea,#dde4ea,#dde4ea,#dde4ea)
 }
 div.thongbao{

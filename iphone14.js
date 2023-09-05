@@ -8,7 +8,7 @@ function set1(z){
 }
 function set2(z){
     z.css({
-        "width":"30%",
+        "width":"67px",
         "border-radius":"30px",
         "height":"20px",
         "right":"78px"
@@ -21,7 +21,7 @@ window.onload = function(){
     for(c of b)
     {
         c.addEventListener("click", function(){
-            if(Math.round(parseFloat($(a).children(".dynamic").css("height"))) !== 357)
+            if(Math.round(parseFloat($(a).children(".dynamic").css("height"))) !== 349)
             {
                 $(a).children(".dynamic").html(
                 `
@@ -31,10 +31,10 @@ window.onload = function(){
                     </div>  
                 `)
                 $(a).children(".dynamic").css({
-                    "width":"213.8px",
+                    "width":"213px",
                     "border-radius":"25px",  
-                    "height":"357px",
-                    "right":"4.5px",
+                    "height":"349px",
+                    "right":"5px",
                 });
                 setTimeout(set1,500,$(a).children(".dynamic").children("div.dynamicthem").children("div.info"))
             }
