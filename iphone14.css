@@ -1,9 +1,9 @@
 body{
-    background-color: black;
+    background-color: black ;
     font-family: arial;
     font-size:13px;
 }
-div.khungsat{
+div.khung{
     width:233px;
     height:482px;
     box-shadow: 0 0 2px 1px rgb(190, 82, 190), 0 0 0 3px silver;
@@ -12,7 +12,7 @@ div.khungsat{
     position:relative;
     background-color: black;
 }
-body>div>div{
+body>div{
     margin-top:100px;
     display:flex;
     justify-content: center;
@@ -23,7 +23,7 @@ div.manhinh{
     position:absolute;
     background-color: black;
     width:223px;
-    height:472px;
+    height:0px;
     border-radius: 30px;
 }
 div.manhinhtren{
