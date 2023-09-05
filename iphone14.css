@@ -34,7 +34,7 @@ div.manhinhtren{
     border-radius: 30px 30px 110px 110px; 
     overflow:hidden;
 }
-div.manhinhtren>div.phankhac{
+div.manhinhtren>div{
     top:-9px;
     left:-9px;
     position:absolute;
