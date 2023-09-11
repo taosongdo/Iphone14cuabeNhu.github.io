@@ -26,6 +26,11 @@ div.manhinh{
     height:0px;
     border-radius: 30px;
 }
+div.manhinhchung{
+    background-color: black;
+    border-radius: 30px;
+    height:472px;
+}
 div.manhinhtren{
     position:relative;
     box-sizing: border-box;
@@ -43,6 +48,23 @@ div.manhinhtren>div{
     width:239px;
     background-image: radial-gradient(circle,black,black, black,black,black,#570a91,#ba2dcf,#ffbcf6,#ffbcf6,#ffbcf6,#ffbcf6)
 }
+div.manhinhduoi{
+    position:relative;
+    border:2px solid #dde4ea;
+    height:236px;
+    border-radius:  110px 110px 30px 30px; 
+    box-sizing: border-box;
+    overflow:hidden;
+}
+div.manhinhduoi>div{
+    top:-245px;
+    left:-9px;
+    position:absolute;
+    box-sizing: border-box;
+    height:488px;
+    width:239px;
+    background-image: radial-gradient(circle,black,black, black,black,black,#99aebe,#90a5b6,#dde4ea,#dde4ea,#dde4ea,#dde4ea)
+}
 div.dynamic{
     top:5px;
     right:78px;
@@ -57,7 +79,9 @@ div.dynamic{
 }
 div.hinh{
     opacity:0;
-    margin:20px auto;
+    position:absolute;
+    left:5px;
+    bottom:5px;
     width:203px;
     transition:0.5s;
     border-radius: 20px;
@@ -65,11 +89,6 @@ div.hinh{
     height:279px;
     border:2px solid pink;
     box-sizing: border-box;
-}
-div.manhinhchung{
-    background-color: black;
-    border-radius: 30px;
-    height:472px;
 }
 div.hinh>img{
     width:100%;
@@ -113,23 +132,6 @@ div.faceID{
     background-color:rgb(9, 3, 43);
     /*rgb(9, 3, 43)*/
     border-radius: 30px;
-}
-div.manhinhduoi{
-    position:relative;
-    border:2px solid #dde4ea;
-    height:236px;
-    border-radius:  110px 110px 30px 30px; 
-    box-sizing: border-box;
-    overflow:hidden;
-}
-div.manhinhduoi>div{
-    top:-245px;
-    left:-9px;
-    position:absolute;
-    box-sizing: border-box;
-    height:488px;
-    width:239px;
-    background-image: radial-gradient(circle,black,black, black,black,black,#99aebe,#90a5b6,#dde4ea,#dde4ea,#dde4ea,#dde4ea)
 }
 div.thongbao{
     width:4px;
