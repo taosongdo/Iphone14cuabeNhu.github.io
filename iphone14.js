@@ -15,39 +15,114 @@ function set2(z){
     }) 
     z.html(``);
 }
+function set3(z)
+{
+    $(z).css({
+        "width" : `${amluong}px`
+    })
+}
+amluong=1;
 window.onload = function(){
-    let a = document.querySelector("div.cum");
+    let a = document.querySelector("div.dynamic");
     let b =document.querySelectorAll("div.cum > div");
     for(c of b)
     {
         c.addEventListener("click", function(){
-            if(Math.round(parseFloat($(a).children(".dynamic").css("height"))) !== 349)
+            if(Math.round(parseFloat($(a).css("height"))) !== 349)
             {
-                $(a).children(".dynamic").html(
+                $(a).html(
                 `
-                    <div class="dynamicthem">
+                    <div class="meo">
                         <div class="info"><p>Iphone 14 Pro max của bé Như</p></div>
                         <div class="hinh"><img src="hinhmeo.jpg"/></div>
                     </div>  
                 `)
-                $(a).children(".dynamic").css({
+                $(a).css({
                     "width":"213px",
                     "border-radius":"25px",  
                     "height":"349px",
                     "right":"5px",
                 });
-                setTimeout(set1,500,$(a).children(".dynamic").children("div.dynamicthem").children("div.info"))
+                setTimeout(set1,500,$(a).children("div.meo").children("div.info"))
             }
             else
             {
-                $(a).children(".dynamic").children("div.dynamicthem").children("div.info").css({
+                $(a).children("div.meo").children("div.info").css({
                     "opacity":"0",
                 });
-                $(a).children(".dynamic").children("div.dynamicthem").children("div.hinh").css({
+                $(a).children("div.meo").children("div.hinh").css({
                     "opacity":"0",
                 })
-                setTimeout(set2,500,$(a).children(".dynamic"));
+                setTimeout(set2,500,$(a));
             }
         });
     }
+    let z = document.querySelector("div.tangamluong");
+    $(z).click(function(){
+        if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
+        {
+           $(a).css({
+                "width":"199px",
+                "border-radius":"25px",  
+                "height":"40px",
+                "right":"12px",
+            }); 
+            $(a).html(
+                `
+                    <div class="dynamicthem">
+                        <div class="amluong2"><div class="amluong1"></div></div>
+                    </div>  
+                `
+            )
+            if(amluong!==99)
+            {
+                amluong=amluong+14;
+                setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
+            }
+        }
+        else
+        {
+            if(amluong!==99)
+            {
+                amluong=amluong+14;
+                $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
+                    "width" : `${amluong}px`
+                })
+            }
+        }
+   })
+   let y = document.querySelector("div.giamamluong");
+   $(y).click(function(){
+    if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
+    {
+       $(a).css({
+            "width":"199px",
+            "border-radius":"25px",  
+            "height":"40px",
+            "right":"12px",
+        }); 
+        $(a).html(
+            `
+                <div class="dynamicthem">
+                    <div class="amluong2"><div class="amluong1"></div></div>
+                </div>  
+            `
+        )
+        if(amluong!==1)
+        {
+            amluong=amluong-14;
+            setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
+        }
+    }
+    else
+    {
+        if(amluong!==1)
+        {
+            amluong=amluong-14;
+            $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
+                "width" : `${amluong}px`
+            })
+        }
+    }
+})
 }
