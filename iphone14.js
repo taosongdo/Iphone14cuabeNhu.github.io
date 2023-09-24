@@ -21,7 +21,7 @@ function set3(z)
         "width" : `${amluong}px`
     })
 }
-amluong=1;
+amluong=9;
 window.onload = function(){
     let a = document.querySelector("div.dynamic");
     let b =document.querySelectorAll("div.cum > div");
@@ -76,7 +76,7 @@ window.onload = function(){
             )
             if(amluong!==99)
             {
-                amluong=amluong+14;
+                amluong=amluong+6;
                 setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
             }
         }
@@ -84,7 +84,7 @@ window.onload = function(){
         {
             if(amluong!==99)
             {
-                amluong=amluong+14;
+                amluong=amluong+6;
                 $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
                     "width" : `${amluong}px`
                 })
@@ -108,17 +108,17 @@ window.onload = function(){
                 </div>  
             `
         )
-        if(amluong!==1)
+        if(amluong!==9)
         {
-            amluong=amluong-14;
+            amluong=amluong-6;
             setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
         }
     }
     else
     {
-        if(amluong!==1)
+        if(amluong!==9)
         {
-            amluong=amluong-14;
+            amluong=amluong-6;
             $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
                 "width" : `${amluong}px`
             })
