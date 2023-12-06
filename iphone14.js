@@ -1,3 +1,4 @@
+var amluong = 5;
 function set1(z){
     z.css({
         "opacity":"1",
@@ -21,8 +22,8 @@ function set3(z)
         "width" : `${amluong}px`
     })
 }
-amluong=9;
-window.onload = function(){
+function dynamic()
+{
     let a = document.querySelector("div.dynamic");
     let b =document.querySelectorAll("div.cum > div");
     for(c of b)
@@ -57,6 +58,9 @@ window.onload = function(){
             }
         });
     }
+}
+function tangamluong(){
+    let a = document.querySelector("div.dynamic");
     let z = document.querySelector("div.tangamluong");
     $(z).click(function(){
         if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
@@ -74,7 +78,7 @@ window.onload = function(){
                     </div>  
                 `
             )
-            if(amluong!==99)
+            if(amluong!==95)
             {
                 amluong=amluong+6;
                 setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
@@ -82,7 +86,7 @@ window.onload = function(){
         }
         else
         {
-            if(amluong!==99)
+            if(amluong!==95)
             {
                 amluong=amluong+6;
                 $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
@@ -91,8 +95,11 @@ window.onload = function(){
             }
         }
    })
-   let y = document.querySelector("div.giamamluong");
-   $(y).click(function(){
+}
+function giamamluong(){
+    let a = document.querySelector("div.dynamic");
+    let y = document.querySelector("div.giamamluong");
+    $(y).click(function(){
     if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
     {
        $(a).css({
@@ -108,7 +115,7 @@ window.onload = function(){
                 </div>  
             `
         )
-        if(amluong!==9)
+        if(amluong!==5)
         {
             amluong=amluong-6;
             setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
@@ -116,7 +123,7 @@ window.onload = function(){
     }
     else
     {
-        if(amluong!==9)
+        if(amluong!==5)
         {
             amluong=amluong-6;
             $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
@@ -125,4 +132,27 @@ window.onload = function(){
         }
     }
 })
+} 
+function nguon(){
+    let a = document.querySelector("div.dynamic");
+    var nguon = document.querySelector(".nguon")
+    var khung = document.querySelector(".manhinh")
+    $(nguon).click(function(){
+        if($(khung).css("opacity") === "0")
+        {
+            $(khung).css("opacity","1")
+        }
+        else
+        {
+            $(khung).css("opacity","0")
+            setTimeout(set2,500,$(a));
+        }
+        
+    })
+}
+window.onload = function(){
+    dynamic();
+    tangamluong();
+    giamamluong();
+    nguon();
 }
