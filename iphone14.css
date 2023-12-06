@@ -3,6 +3,54 @@ body{
     font-family: arial;
     font-size:13px;
 }
+body>div{
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+}
+div.nuttrai{
+    margin-right:0.5px;  
+    text-align: right;
+}
+div.thongbao{
+    width:4px;
+    background-color: silver;
+    height:20px;
+    margin-top:80px;
+    margin-left:auto;
+}
+div.tangamluong{
+    width:4px;
+    background-color: silver;
+    height:35px;
+    margin-left:auto;
+    margin-top:20px;
+}
+div.giamamluong{
+    width:4px;
+    background-color: silver;
+    height:35px;
+    margin-left:auto;
+    margin-top:10px;
+}
+div.amluong1{
+    width:5px;
+    position:absolute;
+    height:3px;
+    background-color: white ;
+    transition:0.5s
+}
+div.amluong2{
+    width:95px;
+    position:absolute;
+    top:26px;
+    left:52px;
+    border-radius: 3px;
+    height:3px;
+    background-color: rgb(175, 175, 175);
+    overflow:hidden;
+}
+
 div.khung{
     width:233px;
     height:482px;
@@ -12,19 +60,85 @@ div.khung{
     position:relative;
     background-color: black;
 }
-body>div{
-    margin-top:100px;
-    display:flex;
-    justify-content: center;
+
+div.info{
+    opacity:0;
+    transition:0.5s;
+    margin-top:30px;
 }
-div.manhinh{
-    left:5px;
-    top:5px;
+div.info>p{
+    text-align: center;
+    color:pink;
+}
+div.hinh{
+    opacity:0;
     position:absolute;
-    background-color: black;
-    width:223px;
-    height:0px;
+    left:5px;
+    bottom:5px;
+    width:203px;
+    transition:0.5s;
+    border-radius: 20px;
+    overflow:hidden;
+    height:279px;
+    border:2px solid pink;
+    box-sizing: border-box;
+}
+div.hinh>img{
+    width:100%;
+}
+div.dynamic{
+    top:5px;
+    right:78px;
+    position:absolute;
+    z-index:99;
+    width:67px;
+    height:20px;
+    background-color:black;
+    border-radius: 30px;   
+    transition: 0.5s;  
+    overflow:hidden;
+}
+div.faceID{
+    position:absolute;
+    top:8px;
+    left:81px;
+    height:14px;
+    width:40px;
+    z-index:100;
+    background-color:rgb(9, 3, 43);
+    /*rgb(9, 3, 43)*/
     border-radius: 30px;
+}
+div.cam{
+    position:absolute;
+    top:8px;
+    left:128px;
+    height:14px;
+    width:14px;
+    z-index:100;
+    background-color:rgb(9, 3, 43);
+    /*rgb(9, 3, 43)*/
+    border-radius: 100%;
+}
+div.cam>div{
+    position:absolute;
+    background-color: rgb(12, 2, 105);
+    height:6px;
+    width:6px;
+    top:4px;
+    left:4px;
+    border-radius: 100%;
+}
+
+div.manhinh{
+  left:5px;
+  top:5px;
+  position:absolute;
+  background-color: black;
+  width:223px;
+  height:0px;
+  border-radius: 30px;
+  transition: 0.5s;
 }
 div.manhinhchung{
     background-color: black;
@@ -65,124 +179,15 @@ div.manhinhduoi>div{
     width:239px;
     background-image: radial-gradient(circle,black,black, black,black,black,#99aebe,#90a5b6,#dde4ea,#dde4ea,#dde4ea,#dde4ea)
 }
-div.dynamic{
-    top:5px;
-    right:78px;
-    position:absolute;
-    z-index:99;
-    width:67px;
-    height:20px;
-    background-color:black;
-    border-radius: 30px;   
-    transition: 0.5s;  
-    overflow:hidden;
-}
-div.hinh{
-    opacity:0;
-    position:absolute;
-    left:5px;
-    bottom:5px;
-    width:203px;
-    transition:0.5s;
-    border-radius: 20px;
-    overflow:hidden;
-    height:279px;
-    border:2px solid pink;
-    box-sizing: border-box;
-}
-div.hinh>img{
-    width:100%;
-}
-div.info{
-    opacity:0;
-    transition:0.5s;
-    margin-top:30px;
-}
-div.info>p{
-    text-align: center;
-    color:pink;
-}
-div.cam{
-    position:absolute;
-    top:8px;
-    left:128px;
-    height:14px;
-    width:14px;
-    z-index:100;
-    background-color:rgb(9, 3, 43);
-    /*rgb(9, 3, 43)*/
-    border-radius: 100%;
-}
-div.cam>div{
-    position:absolute;
-    background-color: rgb(12, 2, 105);
-    height:6px;
-    width:6px;
-    top:4px;
-    left:4px;
-    border-radius: 100%;
-}
-div.faceID{
-    position:absolute;
-    top:8px;
-    left:81px;
-    height:14px;
-    width:40px;
-    z-index:100;
-    background-color:rgb(9, 3, 43);
-    /*rgb(9, 3, 43)*/
-    border-radius: 30px;
-}
-div.thongbao{
-    width:4px;
-    background-color: silver;
-    height:20px;
-    margin-top:80px;
-    margin-left:auto;
-}
-div.tangamluong{
-    width:4px;
-    background-color: silver;
-    height:35px;
-    margin-left:auto;
-    margin-top:20px;
-}
-div.giamamluong{
-    width:4px;
-    background-color: silver;
-    height:35px;
-    margin-left:auto;
-    margin-top:10px;
-}
-div.nuttrai{
-    margin-right:0.5px;  
-    text-align: right;
-}
+
 div.nutphai{
     margin-left:0.5px;  
     text-align: left;
 }
 div.nguon{
-    width:4px;
-    background-color: silver;
-    height:60px;
-    margin-left:auto;
-    margin-top:130px;
-}
-div.amluong1{
-    width:9px;
-    position:absolute;
-    height:3px;
-    background-color: white ;
-    transition:0.5s
-}
-div.amluong2{
-    width:99px;
-    position:absolute;
-    top:26px;
-    left:50px;
-    border-radius: 3px;
-    height:3px;
-    background-color: rgb(175, 175, 175);
-     overflow:hidden;
+  width:4px;
+  background-color: silver;
+  height:60px;
+  margin-left:auto;
+  margin-top:130px;
 }
