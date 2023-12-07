@@ -63,7 +63,7 @@ div.khung{
 
 div.info{
     opacity:0;
-    transition:0.5s;
+    transition:0.25s;
     margin-top:30px;
 }
 div.info>p{
@@ -76,7 +76,7 @@ div.hinh{
     left:5px;
     bottom:5px;
     width:203px;
-    transition:0.5s;
+    transition:0.25s;
     border-radius: 20px;
     overflow:hidden;
     height:279px;
@@ -95,7 +95,7 @@ div.dynamic{
     height:20px;
     background-color:black;
     border-radius: 30px;   
-    transition: 0.5s;  
+    transition: 0.25s;  
     overflow:hidden;
 }
 div.faceID{
@@ -137,13 +137,13 @@ div.manhinh{
   background-color: black;
   width:223px;
   height:0px;
-  border-radius: 30px;
+  border-radius: 25px;
   transition: 0.5s;
 }
 div.manhinhchung{
-    background-color: black;
-    border-radius: 30px;
-    height:472px;
+  background-color: black;
+  border-radius: 30px;
+  height:472px;
 }
 div.manhinhtren{
     position:relative;
