@@ -44,7 +44,7 @@ function dynamic()
                     "height":"349px",
                     "right":"5px",
                 });
-                setTimeout(set1,500,$(a).children("div.meo").children("div.info"))
+                setTimeout(set1,250,$(a).children("div.meo").children("div.info"))
             }
             else
             {
@@ -54,7 +54,7 @@ function dynamic()
                 $(a).children("div.meo").children("div.hinh").css({
                     "opacity":"0",
                 })
-                setTimeout(set2,500,$(a));
+                setTimeout(set2,250,$(a));
             }
         });
     }
