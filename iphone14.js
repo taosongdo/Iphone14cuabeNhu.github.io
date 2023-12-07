@@ -18,7 +18,7 @@ function set2(z){
 }
 function set3(z)
 {
-    $(z).css({
+    z.css({
         "width" : `${amluong}px`
     })
 }
@@ -62,7 +62,7 @@ function dynamic()
 function tangamluong(){
     let a = document.querySelector("div.dynamic");
     let z = document.querySelector("div.tangamluong");
-    $(z).click(function(){
+    z.addEventListener("click",function(){
         if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
         {
            $(a).css({
@@ -99,59 +99,73 @@ function tangamluong(){
 function giamamluong(){
     let a = document.querySelector("div.dynamic");
     let y = document.querySelector("div.giamamluong");
-    $(y).click(function(){
-    if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
+    y.addEventListener("click",function()
     {
-       $(a).css({
-            "width":"199px",
-            "border-radius":"25px",  
-            "height":"40px",
-            "right":"12px",
-        }); 
-        $(a).html(
+        if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
+        {
+            $(a).css(
+            {
+                "width":"199px",
+                "border-radius":"25px",
+                "height":"40px",
+                "right":"12px",
+            });
+            $(a).html(
             `
-                <div class="dynamicthem">
+            <div class="dynamicthem">
                     <div class="amluong2"><div class="amluong1"></div></div>
-                </div>  
+            </div>  
             `
-        )
-        if(amluong!==5)
-        {
-            amluong=amluong-6;
-            setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
+            )
+            if(amluong!==5)
+            {
+                amluong=amluong-6;
+                setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
+            }
         }
-    }
-    else
-    {
-        if(amluong!==5)
+        else
         {
-            amluong=amluong-6;
-            $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
-                "width" : `${amluong}px`
-            })
+            if(amluong!==5)
+            {
+                amluong=amluong-6;
+                $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
+                    "width" : `${amluong}px`
+                    
+                })
+            }
         }
-    }
-})
-} 
+    })
+}
+function bamSMH(){
+    var khung = document.querySelector(".manhinh")
+    khung.addEventListener("click",function(){
+        if($(khung).css("opacity")==="0")
+        {
+            $(khung).css({"opacity":"1"})
+            set2($(a))
+        }
+    })
+}
 function nguon(){
     let a = document.querySelector("div.dynamic");
     var nguon = document.querySelector(".nguon")
     var khung = document.querySelector(".manhinh")
-    $(nguon).click(function(){
+    nguon.addEventListener("click",function(){
         if($(khung).css("opacity") === "0")
         {
-            $(khung).css("opacity","1")
+            $(khung).css({"opacity":"1"})
+            set2($(a))
         }
         else
         {
             $(khung).css("opacity","0")
-            setTimeout(set2,500,$(a));
+            setTimeout(set2,500,$(a))
         }
-        
     })
 }
 window.onload = function(){
     dynamic();
+    bamSMH();
     tangamluong();
     giamamluong();
     nguon();
