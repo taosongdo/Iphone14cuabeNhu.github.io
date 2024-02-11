@@ -38,7 +38,7 @@ div.amluong1{
     position:absolute;
     height:3px;
     background-color: white ;
-    transition:0.5s
+    transition:0.25s
 }
 div.amluong2{
     width:95px;
@@ -138,7 +138,7 @@ div.manhinh{
   width:223px;
   height:0px;
   border-radius: 25px;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 div.manhinhchung{
   background-color: black;
