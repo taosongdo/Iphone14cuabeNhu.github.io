@@ -1,4 +1,5 @@
 var amluong = 5;
+var checkMan = true;
 function set1(z){
     z.css({
         "opacity":"1",
@@ -29,13 +30,13 @@ function dynamic()
     for(c of b)
     {
         c.addEventListener("click", function(){
-            if(Math.round(parseFloat($(a).css("height"))) !== 349)
+            if(Math.round(parseFloat($(a).css("height"))) !== 349 && checkMan)
             {
                 $(a).html(
                 `
                     <div class="meo">
                         <div class="info"><p>Iphone 14 Pro max của bé Như</p></div>
-                        <div class="hinh"><img src="hinhmeo.jpg"/></div>
+                        <div class="hinh"><img src="hinhmeo.img"/></div>
                     </div>  
                 `)
                 $(a).css({
@@ -63,35 +64,36 @@ function tangamluong(){
     let a = document.querySelector("div.dynamic");
     let z = document.querySelector("div.tangamluong");
     z.addEventListener("click",function(){
-        if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
+        if(checkMan)
         {
-           $(a).css({
-                "width":"199px",
-                "border-radius":"25px",  
-                "height":"40px",
-                "right":"12px",
-            }); 
-            $(a).html(
-                `
-                    <div class="dynamicthem">
-                        <div class="amluong2"><div class="amluong1"></div></div>
-                    </div>  
-                `
-            )
-            if(amluong!==95)
+            if(($(a).html()=== "" || $(a).children("div").attr("class") ==="meo"))
             {
-                amluong=amluong+6;
+                $(a).css({
+                    "width":"199px",
+                    "border-radius":"25px",
+                    "height":"40px",
+                    "right":"12px",
+                });
+                $(a).html(
+                `
+                <div class="dynamicthem">
+                <div class="amluong2"><div class="amluong1"></div></div>
+                </div>  
+                `
+                )
+                if(amluong!==95)
+                {
+                    amluong=amluong+6
+                }
                 setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
             }
-        }
-        else
-        {
-            if(amluong!==95)
+            else
             {
-                amluong=amluong+6;
-                $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
-                    "width" : `${amluong}px`
-                })
+                if(amluong!==95)
+                {
+                    amluong=amluong+6;
+                    $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({"width" : `${amluong}px`})
+                }
             }
         }
    })
@@ -101,48 +103,49 @@ function giamamluong(){
     let y = document.querySelector("div.giamamluong");
     y.addEventListener("click",function()
     {
-        if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo" )
+        if(checkMan)
         {
-            $(a).css(
+            if($(a).html()=== "" || $(a).children("div").attr("class") ==="meo")
             {
-                "width":"199px",
-                "border-radius":"25px",
-                "height":"40px",
-                "right":"12px",
-            });
-            $(a).html(
-            `
-            <div class="dynamicthem">
-                    <div class="amluong2"><div class="amluong1"></div></div>
-            </div>  
-            `
-            )
-            if(amluong!==5)
-            {
-                amluong=amluong-6;
+                $(a).css(
+                {
+                    "width":"199px",
+                    "border-radius":"25px",
+                    "height":"40px",
+                    "right":"12px",
+                });
+                $(a).html(
+                `
+                <div class="dynamicthem">
+                <div class="amluong2"><div class="amluong1"></div></div>
+                </div>
+                `
+                )
+                if(amluong!==5)
+                {
+                    amluong=amluong-6;
+                }
                 setTimeout(set3,500,$(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1"))
             }
-        }
-        else
-        {
-            if(amluong!==5)
+            else
             {
-                amluong=amluong-6;
-                $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({
-                    "width" : `${amluong}px`
-                    
-                })
+                if(amluong!==5)
+                {
+                    amluong=amluong-6;
+                    $(a).children("div.dynamicthem").children("div.amluong2").children("div.amluong1").css({"width" : `${amluong}px`})
+                }
             }
         }
     })
 }
 function bamSMH(){
+    let a = document.querySelector("div.dynamic");
     var khung = document.querySelector(".manhinh")
     khung.addEventListener("click",function(){
         if($(khung).css("opacity")==="0")
         {
             $(khung).css({"opacity":"1"})
-            set2($(a))
+            checkMan = true;
         }
     })
 }
@@ -154,12 +157,13 @@ function nguon(){
         if($(khung).css("opacity") === "0")
         {
             $(khung).css({"opacity":"1"})
-            set2($(a))
+            checkMan = true;
         }
         else
         {
+            checkMan = false;
             $(khung).css("opacity","0")
-            setTimeout(set2,500,$(a))
+            setTimeout(set2,250,$(a))
         }
     })
 }
